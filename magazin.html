@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shop</title>
+	<link href="css/MAGstyle.css" rel="stylesheet">
+	<link href="css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="js/jquery-1.8.3.js"></script>
+	<script src="js/jquery-ui-1.9.2.custom.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+
+	<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/MAGmain.js" type="text/javascript" charset="utf-8"></script>
+	
+
+</head>
+<body class="home">
+		
+	<div id="modal">
+		<div id="close_mod">
+			<svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 47.971 47.971" style="enable-background:new 0 0 47.971 47.971;" xml:space="preserve"><path d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88
+					c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242
+					C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879
+					s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z"/>
+			</svg>
+
+		</div>
+		<div id="conten_modal">
+			<form action="">
+				<div class="input">
+					<input type="text" name='login' placeholder='E-mail@'>
+				</div>
+				<div class="input">
+						<input type="text" name='login' placeholder='login'>
+					</div>
+				<div class="input">
+					<input type="password" name='password' placeholder="Password">
+				</div>
+				<button class="submit">Sign in</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="black_fill"></div>
+
+
+	<div id="cart_box" class="anime main_flex__nowrap flex__jcontent_between   flex__align-items_center">
+
+			<div class="title_cart main_flex__nowrap flex__align-items_center flex__jcontent_between">
+				<p>Ваша корзина</p>
+				<svg version="1.1" id='next' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 240.823 240.823" style="enable-background:new 0 0 240.823 240.823;" xml:space="preserve"><path  d="M183.189,111.816L74.892,3.555c-4.752-4.74-12.451-4.74-17.215,0c-4.752,4.74-4.752,12.439,0,17.179
+						l99.707,99.671l-99.695,99.671c-4.752,4.74-4.752,12.439,0,17.191c4.752,4.74,12.463,4.74,17.215,0l108.297-108.261
+						C187.881,124.315,187.881,116.495,183.189,111.816z"/>
+   				</svg>
+			</div>
+			<div id="content_cart"></div>
+			<button id='order' type='button'> Order</button>
+	</div>
+
+	<header class='dark'>
+		<div id="top">
+			<div class="header_logo wrap main_flex__nowrap flex__align-items_center flex__jcontent_between">
+				<div class=" locationImg main_flex__nowrap flex__align-items_center ">
+
+					<div id="sign" class="btn anime main_flex__nowrap flex__align-items_center flex__jcontent_between">
+						<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							  viewBox="0 0 409.165 409.164"
+							 xml:space="preserve">
+
+								<path d="M204.583,216.671c50.664,0,91.74-48.075,91.74-107.378c0-82.237-41.074-107.377-91.74-107.377
+									c-50.668,0-91.74,25.14-91.74,107.377C112.844,168.596,153.916,216.671,204.583,216.671z"/>
+								<path d="M407.164,374.717L360.88,270.454c-2.117-4.771-5.836-8.728-10.465-11.138l-71.83-37.392
+									c-1.584-0.823-3.502-0.663-4.926,0.415c-20.316,15.366-44.203,23.488-69.076,23.488c-24.877,0-48.762-8.122-69.078-23.488
+									c-1.428-1.078-3.346-1.238-4.93-0.415L58.75,259.316c-4.631,2.41-8.346,6.365-10.465,11.138L2.001,374.717
+									c-3.191,7.188-2.537,15.412,1.75,22.005c4.285,6.592,11.537,10.526,19.4,10.526h362.861c7.863,0,15.117-3.936,19.402-10.527
+									C409.699,390.129,410.355,381.902,407.164,374.717z"/>
+						</svg>
+						SIGN IN
+					</div>
+					<div id="location">
+						Location: 
+					</div>
+					<img src="./img/Ukraine.png.png" alt="">
+						
+				</div>
+
+				<div id="logoss">
+					<a href="#">LASSO</a>
+				</div>
+
+				<div class="main_flex__nowrap flex__align-items_center
+				flex__jcontent_between ">
+					<div class="main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div id="currency">Currency:  </div> 
+					<div class="imgcurrency">
+						<img src="./img/united-states-of-america.png" alt="">
+					</div>
+				    </div>
+
+					<div id="carte" class="btn anime main_flex__nowrap flex__align-items_center flex__jcontent_between">
+
+							<svg   version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink=" http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 viewBox="0 0 30.511 30.511" style="enable-background:new 0 0 30.511 30.511;" xml:space="preserve"><path  d="M26.818,19.037l3.607-10.796c0.181-0.519,0.044-0.831-0.102-1.037
+										c-0.374-0.527-1.143-0.532-1.292-0.532L8.646,6.668L8.102,4.087c-0.147-0.609-0.581-1.19-1.456-1.19H0.917
+									C0.323,2.897,0,3.175,0,3.73v1.49c0,0.537,0.322,0.677,0.938,0.677h4.837l3.702,15.717c-0.588,0.623-0.908,1.531-0.908,2.378
+									c0,1.864,1.484,3.582,3.38,3.582c1.79,0,3.132-1.677,3.35-2.677h7.21c0.218,1,1.305,2.717,3.349,2.717
+									c1.863,0,3.378-1.614,3.378-3.475c0-1.851-1.125-3.492-3.359-3.492c-0.929,0-2.031,0.5-2.543,1.25h-8.859
+									c-0.643-1-1.521-1.31-2.409-1.345l-0.123-0.655h13.479C26.438,19.897,26.638,19.527,26.818,19.037z M25.883,22.828
+									c0.701,0,1.27,0.569,1.27,1.27s-0.569,1.27-1.27,1.27s-1.271-0.568-1.271-1.27C24.613,23.397,25.182,22.828,25.883,22.828z
+									 M13.205,24.098c0,0.709-0.576,1.286-1.283,1.286c-0.709-0.002-1.286-0.577-1.286-1.286s0.577-1.286,1.286-1.286
+									C12.629,22.812,13.205,23.389,13.205,24.098z"/>
+							</svg>
+
+						    CART
+					</div>
+				</div>
+				
+			</div>
+			<div id="menuha" class="main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="wrap main_flex__nowrap flex__jcontent_center flex__align-items_center">
+						<nav id="main_navig">
+							<li><a href="#">MENS</a></li>
+							<li><a href="#">WOMENS</a></li>
+							<li><a href="#">GOODS</a></li>
+							<li><a href="#">ACCESSORIES</a></li>
+							<li><a href="#">BRANDS</a></li>
+							<li><a href="#">BLOG</a></li>
+						</nav>
+		
+						<div id="search-panel">
+							<input type="text" placeholder="Search"/>
+						</div>
+		
+						<div id="search_button">
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								  viewBox="0 0 485.213 485.213" style="enable-background:new 0 0 485.213 485.213;"
+								 xml:space="preserve">
+									<path d="M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324
+										c17.772,17.768,46.587,17.768,64.321,0C489.654,454.149,489.654,425.334,471.882,407.567z"/>
+									<path d="M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951
+										C282.44,363.906,363.909,282.437,363.909,181.955z M181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46
+										c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465
+										C318.424,257.208,257.206,318.416,181.956,318.416z"/>
+									<path d="M75.817,181.955h30.322c0-41.803,34.014-75.814,75.816-75.814V75.816C123.438,75.816,75.817,123.437,75.817,181.955z"/>
+							</svg>
+		
+						</div>
+							
+					</div>
+				</div>
+		</div>
+
+		
+	</header>
+
+	<div id="banner">
+		<div id="banner_wrap" class="wrap">
+			<div class="slide_banner">
+
+				<div class="slide_img_banner">
+					 <img src="img/slide1.png" alt="">
+				</div>
+				<div class="slide_title_banner">
+					<div class="header_slide_title_banner">
+						<h2>best seller this month</h2>
+						<h3>super price!</h3>
+					</div>
+					
+					<div><a href="#">Catch this --></a></div>
+
+				</div>
+
+				<div class="slider_order_banner">
+					<div class="input_box main_flex__nowrap flex__jcontent_start flex__align-items_center">
+						<div class="label_input_box">
+							<label>Размер</label>
+						</div>
+						<div class="inline_radio box_radio">
+							<label>
+								40
+								<input type="radio" value="40" name="size">
+							</label>
+							<label>
+								41
+								<input type="radio" value="41" name="size">
+							</label>
+							<label>
+								42
+								<input type="radio" value="42" name="size">
+							</label>
+							<label>
+								43
+								<input type="radio" value="43" name="size">
+							</label>
+							<label>
+								44
+								<input type="radio" value="44" name="size">
+							</label>
+						</div>
+					</div>
+
+					<div class="input_box main_flex__nowrap flex__jcontent_start flex__align-items_center">
+						<div class="label_input_box">
+							<label>Цвет</label>
+						</div>
+						<div class="inline_radio radio_color">
+							<label>
+
+								<input type="radio" value="color1" name="size">
+							</label>
+							<label>
+
+								<input type="radio" value="color2" name="size">
+							</label>
+							<label>
+
+								<input type="radio" value="color3" name="size">
+							</label>
+
+
+						</div>
+					</div>
+
+					<div class="main_flex__nowrap flex__jcontent_between flex__align-items_center">
+						<input type="number"  value='1' min='1' name="count">
+						<button type="submit" class="btn main_btn">Купить</button>
+					</div>
+				</div>
+
+				<div class="slider_bottom_bg"></div>
+     		</div>
+     		<div class="slide_banner">
+
+				<div class="slide_img_banner">
+					 <img src="img/running_shoes_PNG5795.png" alt="">
+				</div>
+
+				<div class="slide_title_banner">
+					<div class="header_slide_title_banner">
+						<h2>best seller this month</h2>
+						<h3>super price!</h3>
+					</div>
+					
+					<div><a href="#">Catch this --></a></div>
+
+				</div>
+
+				<div class="slider_order_banner">
+					<div class="input_box main_flex__nowrap flex__jcontent_start flex__align-items_center">
+						<div class="label_input_box">
+							<label>Размер</label>
+						</div>
+						<div class="inline_radio box_radio">
+							<label>
+								40
+								<input type="radio" value="40" name="size">
+							</label>
+							<label>
+								41
+								<input type="radio" value="41" name="size">
+							</label>
+							<label>
+								42
+								<input type="radio" value="42" name="size">
+							</label>
+							<label>
+								43
+								<input type="radio" value="43" name="size">
+							</label>
+							<label>
+								44
+								<input type="radio" value="44" name="size">
+							</label>
+						</div>
+					</div>
+
+					<div class="input_box main_flex__nowrap flex__jcontent_start flex__align-items_center">
+						<div class="label_input_box">
+							<label>Цвет</label>
+						</div>
+						<div class="inline_radio radio_color">
+							<label>
+
+								<input type="radio" value="color1" name="size">
+							</label>
+							<label>
+
+								<input type="radio" value="color2" name="size">
+							</label>
+							<label>
+
+								<input type="radio" value="color3" name="size">
+							</label>
+
+
+						</div>
+					</div>
+
+					<div class="main_flex__nowrap flex__jcontent_between flex__align-items_center">
+						<input type="number"  value='1' min='1' name="count">
+						<button type="submit" class="btn main_btn">Купить</button>
+					</div>
+				</div>
+
+				<div class="slider_bottom_bg"></div>
+     		</div>
+     		<div class="slide_banner">
+
+				<div class="slide_img_banner">
+					 <img src="img/tttt.png" alt="">
+				</div>
+
+				<div class="slide_title_banner">
+					<div class="header_slide_title_banner">
+						<h2>best seller this month</h2>
+						<h3>super price!</h3>
+					</div>
+					
+					<div><a href="#">Catch this --></a></div>
+
+				</div>
+
+				<div class="slider_order_banner">
+					<div class="input_box main_flex__nowrap flex__jcontent_start flex__align-items_center">
+						<div class="label_input_box">
+							<label>Размер</label>
+						</div>
+						<div class="inline_radio box_radio">
+							<label>
+								40
+								<input type="radio" value="40" name="size">
+							</label>
+							<label>
+								41
+								<input type="radio" value="41" name="size">
+							</label>
+							<label>
+								42
+								<input type="radio" value="42" name="size">
+							</label>
+							<label>
+								43
+								<input type="radio" value="43" name="size">
+							</label>
+							<label>
+								44
+								<input type="radio" value="44" name="size">
+							</label>
+						</div>
+					</div>
+
+					<div class="input_box main_flex__nowrap flex__jcontent_start flex__align-items_center">
+						<div class="label_input_box">
+							<label>Цвет</label>
+						</div>
+						<div class="inline_radio radio_color">
+							<label>
+
+								<input type="radio" value="color1" name="size">
+							</label>
+							<label>
+
+								<input type="radio" value="color2" name="size">
+							</label>
+							<label>
+
+								<input type="radio" value="color3" name="size">
+							</label>
+
+
+						</div>
+					</div>
+
+					<div class="main_flex__nowrap flex__jcontent_between flex__align-items_center">
+						<input type="number"  value='1' min='1' name="count">
+						<button type="submit" class="btn main_btn">Купить</button>
+					</div>
+				</div>
+
+				<div class="slider_bottom_bg"></div>
+     		</div>
+		</div>
+	</div>
+
+	<main class="wrap main_flex__nowrap flex__jcontent_between flex__align-items_start">
+
+		<div id="left_bar">
+
+			<div id="category" class="box">
+
+				<div class="list_box">
+
+					<div class="title_box main_flex__nowrap flex__align-items_center flex__jcontent_between">
+						<p>Woman</p>
+						<img src="img/right-arrow.png" alt="">
+					</div>
+					<div class="list_link anime">
+						<nav>
+							<li><a href="#">sneakers</a></li>
+							<li><a href="#">shoes</a></li>
+							<li><a href="#">boots</a></li>
+							<li><a href="#">sandals</a></li>
+							<li><a href="#">slipper</a></li>
+						</nav>
+					</div>
+				</div>
+
+				<div class="list_box">
+
+					<div class="title_box main_flex__nowrap flex__align-items_center flex__jcontent_between">
+						<p>Man</p>
+						<img src="img/right-arrow.png" alt="">
+					</div>
+					<div class="list_link anime">
+						<nav>
+							<li><a href="#">sneakers</a></li>
+							<li><a href="#">shoes</a></li>
+							<li><a href="#">boots</a></li>
+							<li><a href="#">sandals</a></li>
+							<li><a href="#">slipper</a></li>
+						</nav>
+					</div>
+				</div>
+
+				<div class="list_box">
+
+					<div class="title_box main_flex__nowrap flex__align-items_center flex__jcontent_between">
+						<p>Kids</p>
+						<img src="img/right-arrow.png" alt="">
+					</div>
+					<div class="list_link anime">
+						<nav>
+							<li><a href="#">sneakers</a></li>
+							<li><a href="#">shoes</a></li>
+							<li><a href="#">boots</a></li>
+							<li><a href="#">sandals</a></li>
+							<li><a href="#">slipper</a></li>
+						</nav>
+					</div>
+				</div>
+
+				<div class="list_box">
+
+					<div class="title_box bordernone main_flex__nowrap flex__align-items_center flex__jcontent_between">
+						<p>Bags</p>
+						<img src="img/right-arrow.png" alt="">
+					</div>
+				
+				</div>
+			</div>
+
+			<div class="filter_box box">
+				<div class="title_filter main_flex__nowrap flex__jcontent_start flex__align-items_center">
+					colors
+				</div>
+
+				<div class="content_filter">
+					<ul class="list_filter main_flex flex__jcontent_start flex__align-items_start color_list">
+						<li>
+							<input id="blue" type="checkbox">
+							<label style='background-color:#1476f1' for="blue"></label>
+						</li>
+						<li>
+							<input id='color2'type="checkbox">
+							<label style='background-color:#ecdf29'for="color2"></label>
+						</li>
+						<li>
+							<input id='color3'type="checkbox">
+							<label style='background-color:#3c3d41' for="color3"></label>
+						</li>
+					
+						<li>
+							<input id="color5"	type="checkbox">
+							<label style='background-color:#1ed655' for="color5"></label>
+						</li>
+					
+						<li>
+							<input id="color7" type="checkbox">
+							<label style='background-color:#f00d77' for="color7"></label>
+						</li>
+					
+						
+					</ul>
+				</div>
+			</div>
+
+			<div class="filter_box box">
+				<div class="title_filter main_flex__nowrap flex__jcontent_start flex__align-items_center">
+					size
+				</div>
+
+				<div class="content_filter">
+					<ul class="list_filter main_flex flex__jcontent_start flex__align-items_start ">
+						<li>
+							<input checked id="size1" type="checkbox">
+							<label for="size1">XS</label>
+						</li>
+						<li>
+							<input id="size2" type="checkbox">
+							<label for="size2">S</label>
+						</li>
+						<li>
+							<input id="size3" type="checkbox">
+							<label for="size3">M</label>
+						</li>
+						<li>
+							<input id="size4" type="checkbox">
+							<label for="size4">L</label>
+						</li>
+						<li>
+							<input id="size5" type="checkbox">
+							<label for="size5">XL</label>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="filter_box box">
+				<div class="title_filter main_flex__nowrap flex__jcontent_start flex__align-items_center">
+					PRICE RANGE
+				</div>
+
+				<div class="content_filter ">
+					<div id="slider_price"></div>
+
+					<div class="price_box main_flex__nowrap flex__jcontent_between flex__align-items_center">
+
+					<input type="text" name="minPrice" value=''>
+					<input type="text" name="maxPrice" value=''>
+
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+		<div id="right_bar">
+
+			<div class="list_product main_flex flex__jcontent_start flex__align-items_center">
+
+				<a class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="tag box">
+						new
+					</div>
+					<div class="img_product anime">
+						<img src="img/Shoes1.png">
+					</div>
+					<h2>Название товара </h2>
+					<p>его описание</p>
+					<p class="price">10$</p>
+				</a>
+
+				<a class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product anime">
+						<img src="img/Shoes1.png">
+					</div>
+					<h2>Название товара </h2>
+					<p>его описание</p>
+					<p class="price">10$</p>
+				</a>
+				<a class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product anime">
+						<img src="img/Shoes1.png">
+					</div>
+					<h2>Название товара </h2>
+					<p>его описание</p>
+					<p class="price">10$</p>
+				</a>
+				<a class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product anime ">
+						<img src="img/Shoes1.png">
+					</div>
+					<h2>Название товара </h2>
+					<p>его описание</p>
+					<p class="price">10$</p>
+				</a>
+				<a class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product anime">
+						<img src="img/Shoes1.png">
+					</div>
+					<h2>Название товара </h2>
+					<p>его описание</p>
+					<p class="price">10$</p>
+				</a>
+				<a class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product anime">
+						<img src="img/Shoes1.png">
+					</div>
+					<h2>Название товара </h2>
+					<p>его описание</p>
+					<p class="price">10$</p>
+				</a>
+				<a class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product anime">
+						<img src="img/Shoes1.png">
+					</div>
+					<h2>Название товара </h2>
+					<p>его описание</p>
+					<p class="price">10$</p>
+				</a>
+				<a class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product anime">
+						<img src="img/Shoes1.png">
+					</div>
+					<h2>Название товара </h2>
+					<p>его описание</p>
+					<p class="price">10$</p>
+				</a>
+				<a class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product anime">
+						<img src="img/Shoes1.png">
+					</div>
+					<h2>Название товара </h2>
+					<p>его описание</p>
+					<p class="price">10$</p>
+				</a>
+				<a class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+						<div class="img_product anime">
+							<img src="img/Shoes1.png">
+						</div>
+						<h2>Название товара </h2>
+						<p>его описание</p>
+						<p class="price">10$</p>
+					</a>
+					<a class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+							<div class="img_product anime">
+								<img src="img/Shoes1.png">
+							</div>
+							<h2>Название товара </h2>
+							<p>его описание</p>
+							<p class="price">10$</p>
+						</a>
+						<a class="product box main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<div class="img_product anime">
+						<img src="img/Shoes1.png">
+					</div>
+					<h2>Название товара </h2>
+					<p>его описание</p>
+					<p class="price">10$</p>
+				</a>
+			</div>
+			<div class="botton">
+			    <button id="load_more" >Load More</button>
+		    </div>
+		</div>
+
+	</main>
+
+	<footer>
+		<div class="wrap">
+			<div>
+				<nav id="footer_nav" class="main_flex__nowrap flex__jcontent_center flex__align-items_center">
+					<li><a href="#">LEGAL INFO</a></li>
+					<li><a href="#">TERNS</a></li>
+					<li><a href="#">DATA PRIVACY</a></li>
+					<li><a href="#">SIZING</a></li>
+					<li><a href="#">SHIPPING</a></li>
+					<li><a href="#">CONTACTS</a></li>
+				</nav>
+			</div>
+
+	
+		</div>
+	</footer>
+
+
+</body>
+</html>
