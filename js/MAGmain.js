@@ -15,7 +15,7 @@ $(function(){
         infinite: true,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 1500,
         draggable: true,
         arrows: false,
 
